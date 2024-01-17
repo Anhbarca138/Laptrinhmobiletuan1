@@ -1,0 +1,132 @@
+//kieu du lieu so
+void main(){
+  int b1=42;
+  double b2=3.14;
+  print('bien 1: $b1');
+  print('bien 2: $b2');
+}
+2.
+//kieu du lieu chuoi
+void main() {
+  String b1= 'abx';
+  String b2= 'dca';
+  print('bien 1: $b1');
+  print('bien 2: $b2');
+}
+3.
+//kieu du lieu boolean
+void main() {
+  bool isVui= true;
+  bool isBuon= false;
+  print('bien 1: $isVui');
+  print('bien 2: $isBuon');
+}
+4. 
+//kieu du lieu dynamic
+void main() {
+  dynamic b1= 42;
+  print('Bien 1 la mot so: $b1');
+  b1='to la 1 chuoi';
+  print('bien 1 la 2 chuoi: $b1');
+}
+5. 
+//kieu du lieu mang
+void main() {
+ List<int> numbers=[1,2,3,4,5,6];
+  print('thanh phan dau tien: ${numbers[0]}');
+  print('chieu dai cua mang la: ${numbers.length}');
+}
+6.
+//kieu du lieu Map
+void main() {
+Map<String,dynamic> nguoi ={
+  'name': 'Pham Duy Anh',
+  'age':20,
+  'isStudent': true,
+  'isCNTT': true,
+};
+  print('thong tin ve nguoi');
+  print('Ten: ${nguoi['name']}');
+  print('Tuoi: ${nguoi['age']}');
+  print('Co phai sinh vien khong ? ${nguoi['isStudent']}');
+  print('Co hoc lop CNTT1504 khong? ${nguoi['isCNTT']}');
+}
+7.
+//ep kieu
+void main() {
+  //ep kieu so nguyen sang so thuc
+  int intvalue = 42;
+  double doubleValue=intvalue.toDouble();
+  print('Double value: $doubleValue');
+  //ep kieu tu so thuc sang so nguyen
+  double soThuc=3.14;
+  int soNguyen=soThuc.toInt();
+  print('So nguyen sang so thuc $soNguyen');
+}
+8. 
+//if,else
+void main() {
+  int so=10;
+  if(so>8){
+    print('So lon hon 8');
+  }
+  else{
+    print('so nho hon 8');
+  }
+}
+9.
+//switch
+void main() {
+  String sucvat='heo';
+  switch(sucvat)
+  {
+      case'heo':
+      print('suc vat la heo');
+      break;
+      case'meo':
+      print('suc vat la meo');
+      break;
+    default:
+      print('khong biet loai gi');
+  }
+}
+10.
+//toan tu 3 ngoi 
+void main() {
+  int x=10;
+  int y=20;
+  int kq= x>y ? x:y;
+  print('so lon hon la $kq');
+}
+11.
+//Khai bao va su dung mang
+void main() {
+  //khai bao mang so nguyen
+  List<int> numbers=[1,2,3,4,5,6,7];
+  print('phan tu dau tien cua mang la: ${numbers[0]}');
+  print('phan tu cuoi cung cua mang la: ${numbers[6]}');
+}
+12.
+//su dung list
+void main(){
+  List<String> mausac=['xanh','vang','tim','hong','do'];
+  //in 
+  print('mausac: $mausac');
+  Map<String,int> diem={'Toan':10 , 'Ly': 9,'Sinh':5};
+  print('diem Toan ${diem['Toan']}');
+}
+13.
+//su dung doi tuong
+class Nguoi{
+  String name;
+  int age;
+  int msv;
+ 
+  Nguoi(this.name,this.age,this.msv);
+  
+}
+void main(){
+  //tao doi tuong moi
+  Nguoi n5=Nguoi('Pham Duy Anh',20,1571020015);
+  print('Ten nguoi: ${n5.name},Tuoi: ${n5.age},MSV: ${n5.msv}');
+}
